@@ -1,0 +1,264 @@
+EXPERIMENT NO. 1
+
+TITLE:
+Introduction to MLOps, Comparison of Software Development,
+DevOps and MLOps, MLOps Lifecycle, Key Components of MLOps,
+Challenges in Production Machine Learning Systems, Survey of
+MLOps Tools and Technologies, Preparation of MLOps Workflow
+Diagram and Report.
+
+AIM:
+To study MLOps, compare Software Development, DevOps and MLOps,
+understand the MLOps lifecycle and key components, identify
+challenges in production ML systems, explore MLOps tools and
+technologies, and prepare an MLOps workflow diagram and report.
+
+--------------------------------------------------
+
+STEP 1: INTRODUCTION TO MLOps
+
+MLOps (Machine Learning Operations) is a set of practices that
+combines Machine Learning, DevOps and Data Engineering to
+reliably and efficiently deploy and maintain ML models in
+production.
+
+It aims to unify the development (Dev) and operation (Ops) of
+ML systems by automating and monitoring every step of ML system
+construction, including integration, testing, releasing,
+deployment and infrastructure management.
+
+--------------------------------------------------
+
+STEP 2: COMPARISON OF SOFTWARE DEVELOPMENT, DEVOPS AND MLOps
+
+Aspect                  Software Development       DevOps
+------------------------------------------------------------
+Primary Artifact        Source code                 Source code +
+                                                    infrastructure
+
+Testing Focus           Unit / integration tests    CI/CD pipeline
+                                                    tests
+
+Versioning              Code versioning             Code + config
+                                                    versioning
+
+Reproducibility Driver  Deterministic code          Infrastructure
+                                                    as code
+
+Key Challenge           Bugs in logic               Deployment
+                                                    consistency
+
+------------------------------------------------------------
+
+Aspect                  MLOps
+------------------------------------------------------------
+Primary Artifact        Code + data + model
+
+Testing Focus           Data validation + model
+                        validation
+
+Versioning              Code + data + model
+                        versioning
+
+Reproducibility Driver  Data + code + environment
+                        + model
+
+Key Challenge           Model & data drift over time
+
+--------------------------------------------------
+
+STEP 3: MLOps LIFECYCLE
+
+The MLOps lifecycle consists of the following stages:
+
+1. Data Collection and Data Engineering
+2. Data Validation and Data Versioning
+3. Feature Engineering and Feature Store Management
+4. Model Training and Experimentation
+5. Model Evaluation and Validation
+6. Model Packaging and Versioning
+7. Continuous Integration and Continuous Deployment
+   (CI/CD) of ML Pipelines
+8. Model Deployment and Serving
+9. Monitoring, Logging and Retraining
+
+--------------------------------------------------
+
+STEP 4: KEY COMPONENTS OF MLOps
+
+Component                  Purpose
+------------------------------------------------------------
+Version Control (Git)      Tracks changes to source code
+                           and configuration.
+
+Data/Model Versioning      Tracks changes to datasets and
+(DVC)                      trained models.
+
+Experiment Tracking        Logs parameters, metrics and
+(MLflow)                   artifacts of ML runs.
+
+Feature Store (Feast)      Central repository of reusable,
+                           consistent features.
+
+CI/CD                      Automates build, test and release
+(GitHub Actions/GitLab CI) of ML pipelines.
+
+Containerization           Packages the model and its
+(Docker)                   dependencies for deployment.
+
+Serving                    Exposes the trained model as
+(Flask/FastAPI)             a REST API.
+
+Monitoring                 Tracks model performance, data
+                           drift and system health in
+                           production.
+
+--------------------------------------------------
+
+STEP 5: CHALLENGES IN PRODUCTION MACHINE LEARNING SYSTEMS
+
+1. Data Drift and Concept Drift:
+   Changes in data patterns can cause model performance
+   degradation over time.
+
+2. Reproducibility:
+   Reproducing experiments across different environments
+   can be difficult.
+
+3. Version Management:
+   Managing dependencies between data, code and model
+   versions is challenging.
+
+4. Scalability:
+   Training and serving infrastructure must handle
+   increasing workloads.
+
+5. Monitoring:
+   Monitoring model performance and detecting silent
+   failures in production is difficult.
+
+6. Team Coordination:
+   Coordination between data scientists, ML engineers
+   and operations teams is necessary.
+
+--------------------------------------------------
+
+STEP 6: SURVEY OF MLOps TOOLS AND TECHNOLOGIES
+
+Category                     Tools
+------------------------------------------------------------
+Version Control              Git, GitHub, GitLab
+
+Data/Model Versioning        DVC, LakeFS, Delta Lake
+
+Experiment Tracking          MLflow, Weights & Biases,
+                             Neptune.ai
+
+Feature Store                Feast, Tecton, Hopsworks
+
+Workflow Orchestration       Airflow, Kubeflow Pipelines,
+                             Prefect
+
+CI/CD                        GitHub Actions, GitLab CI,
+                             Jenkins
+
+Containerization/            Docker, Kubernetes
+Orchestration
+
+Model Serving                Flask, FastAPI,
+                             TensorFlow Serving,
+                             TorchServe
+
+Monitoring                   Prometheus, Grafana,
+                             Evidently AI
+
+--------------------------------------------------
+
+STEP 7: PREPARATION OF MLOps WORKFLOW DIAGRAM
+
+The following diagram represents the MLOps workflow:
+
+       +---------------------------+
+       |     Data Collection       |
+       +-------------+-------------+
+                     |
+                     v
+       +---------------------------+
+       | Data Validation and       |
+       | Data Versioning (DVC)     |
+       +-------------+-------------+
+                     |
+                     v
+       +---------------------------+
+       | Feature Engineering       |
+       | and Feature Store (Feast) |
+       +-------------+-------------+
+                     |
+                     v
+       +---------------------------+
+       | Model Training and        |
+       | Experiment Tracking       |
+       |          (MLflow)         |
+       +-------------+-------------+
+                     |
+                     v
+       +---------------------------+
+       | Model Evaluation and      |
+       | Validation                |
+       +-------------+-------------+
+                     |
+                     v
+       +---------------------------+
+       | Model Packaging           |
+       | and Versioning            |
+       +-------------+-------------+
+                     |
+                     v
+       +---------------------------+
+       | CI/CD Pipeline            |
+       | (GitHub Actions)          |
+       +-------------+-------------+
+                     |
+                     v
+       +---------------------------+
+       | Containerization          |
+       | (Docker)                  |
+       +-------------+-------------+
+                     |
+                     v
+       +---------------------------+
+       | Model Deployment          |
+       | (Flask / FastAPI)         |
+       +-------------+-------------+
+                     |
+                     v
+       +---------------------------+
+       | Monitoring, Logging       |
+       | and Retraining            |
+       +---------------------------+
+                     |
+                     +------> Feedback
+                              to Training
+
+--------------------------------------------------
+
+STEP 8: RESULT / OBSERVATION
+
+Successfully studied MLOps and its importance in deploying
+and maintaining machine learning models.
+
+Compared Software Development, DevOps and MLOps, understood
+the MLOps lifecycle and key components, identified challenges
+in production ML systems, explored various MLOps tools and
+technologies, and prepared the MLOps workflow diagram.
+
+--------------------------------------------------
+
+CONCLUSION:
+
+MLOps combines Machine Learning, DevOps and Data Engineering
+to automate and manage the complete machine learning lifecycle.
+It improves model reliability, scalability, reproducibility
+and monitoring in production environments.
+
+--------------------------------------------------
